@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armazenamento</title>
+    <link rel="stylesheet" href="css.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+     <style>
+        body {
+            background-color: black;
+            
+        }
+        h3{
+            color: darkslateblue;
+
+        }
+        p{
+
+            color:darkorchid
+        }
+        h1{
+            color: darkslateblue;
+
+        } 
+        a{
+            color: darkslateblue;
+
+        }
+        th{
+            color: darkorchid;
+
+        }
+        h2{
+            color: darkslateblue;
+
+        }
+        
+        li{
+            color: darkorchid;
+
+        }td{
+            color: darkorchid;
+        }
+        
+/* Alterar a cor de fundo da barra de navegação */
+.navbar {
+    background-color: #000000 !important; /* Exemplo: cor cinza escuro */
+}
+
+/* Alterar a cor dos links na barra de navegação */
+.navbar .nav-link {
+    color: rgb(162, 91, 204) !important; /* Define a cor dos links */
+}
+
+/* Alterar a cor dos links ao passar o mouse */
+.navbar .nav-link:hover {
+    color: #e62cff !important; /* Exemplo: cor amarela ao passar o mouse */
+}
+    </style>
+</head>
+<body>
+    <header class="bg-primary text-white text-center p-4"></header>
+        <h1>Pc Wizard</h1>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#" style="color: blueviolet;">Catálogo</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cpu.html">CPU</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gpu.html">GPU</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ram.html">RAM</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="storage.html">Armazenamento</a></li>
+                    <li class="nav-item"><a class="nav-link" href="psu.html">Fonte</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gabinete.html">Gabinete</a></li>
+                    <li class="nav-item"><a class="nav-link" href="resfriamento.html">Resfriamento</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Teste_api.html">Explore os produtos</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="container mt-4">
+        <section class="hero"><h2>Escolha de Armazenamento</h2>
+        <h2>Armazenamento de PC</h2>
+        <p><strong>O que é Armazenamento de PC?</strong></p>
+        <p>O armazenamento de PC é onde todos os seus dados, programas e sistema operacional são mantidos. Existem dois tipos principais de dispositivos de armazenamento: HDDs (Discos Rígidos) e SSDs (Unidades de Estado Sólido).</p>
+        </section>
+        <p><strong>Tipos de Armazenamento</strong></p>
+        <h3>HDD (Hard Disk Drive)</h3>
+        <ul>
+            <li><strong>Funcionamento</strong>: Os HDDs usam discos magnéticos giratórios para armazenar dados. Um braço mecânico lê e escreve informações nesses discos.</li>
+            <li><strong>Vantagens</strong>:
+                <ul>
+                    <li><strong>Custo</strong>: Geralmente mais baratos por GB em comparação aos SSDs.</li>
+                    <li><strong>Capacidade</strong>: Disponíveis em capacidades maiores, tornando-os ideais para armazenar grandes quantidades de dados.</li>
+                </ul>
+            </li>
+            <li><strong>Desvantagens</strong>:
+                <ul>
+                    <li><strong>Velocidade</strong>: Mais lentos na leitura e escrita de dados.</li>
+                    <li><strong>Durabilidade</strong>: Componentes mecânicos podem desgastar com o tempo.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3>SSD (Solid State Drive)</h3>
+        <ul>
+            <li><strong>Funcionamento</strong>: Os SSDs utilizam memória flash, semelhante a um pen drive, para armazenar dados. Não têm partes móveis.</li>
+            <li><strong>Vantagens</strong>:
+                <ul>
+                    <li><strong>Velocidade</strong>: Muito mais rápidos na leitura e escrita de dados em comparação aos HDDs.</li>
+                    <li><strong>Durabilidade</strong>: Sem partes móveis, são menos propensos a falhas mecânicas.</li>
+                    <li><strong>Consumo de Energia</strong>: Geralmente consomem menos energia e geram menos calor.</li>
+                </ul>
+            </li>
+            <li><strong>Desvantagens</strong>:
+                <ul>
+                    <li><strong>Custo</strong>: Mais caros por GB em comparação aos HDDs.</li>
+                    <li><strong>Capacidade</strong>: Embora as capacidades estejam aumentando, ainda são mais caros em maiores tamanhos.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <p><strong>Diferenças entre HDD e SSD</strong></p>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Característica</th>
+                    <th>HDD</th>
+                    <th>SSD</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Velocidade</td>
+                    <td>Mais lento</td>
+                    <td>Muito rápido</td>
+                </tr>
+                <tr>
+                    <td>Custo</td>
+                    <td>Mais barato por GB</td>
+                    <td>Mais caro por GB</td>
+                </tr>
+                <tr>
+                    <td>Capacidade</td>
+                    <td>Disponível em maiores tamanhos</td>
+                    <td>Capacidades menores, mas está aumentando</td>
+                </tr>
+                <tr>
+                    <td>Durabilidade</td>
+                    <td>Partes móveis, mais propenso a falhas mecânicas</td>
+                    <td>Sem partes móveis, menos propenso a falhas</td>
+                </tr>
+                <tr>
+                    <td>Consumo de Energia</td>
+                    <td>Maior consumo de energia</td>
+                    <td>Menor consumo de energia</td>
+                </tr>
+                <tr>
+                    <td>Ruído</td>
+                    <td>Pode gerar ruído</td>
+                    <td>Silencioso</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p><strong>O que Devo Considerar ao Escolher Armazenamento?</strong></p>
+        <ul>
+            <li><strong>Capacidade</strong>: Quanto espaço você precisa? Se você tem muitos arquivos grandes (como vídeos), um HDD pode ser mais econômico. Para rapidez no acesso a programas e sistema operacional, um SSD é ideal.</li>
+            <li><strong>Velocidade</strong>: Se a velocidade é crucial (como para jogos ou edição de vídeo), opte por um SSD.</li>
+            <li><strong>Custo</strong>: SSDs são mais caros, então equilibre seu orçamento com suas necessidades.</li>
+            <li><strong>Durabilidade</strong>: Se você move muito seu computador (como um laptop), um SSD pode ser uma escolha melhor devido à sua resistência a choques.</li>
+        </ul>
+        <img src="https://s2-techtudo.glbimg.com/MBl6LXkXfAIAqZ_uqsHwEjmJy-c=/0x0:695x391/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2020/1/f/AJ6XfJSRmaRsXPsLfXRw/5.formatos.jpg" alt="Armazenamento" class="img-fluid mb-3">
+        <ul>
+            <li>SSD</li>
+            <li>HDD</li>
+        </ul>
+        
+        <section>
+            <h3>Diferenças entre SSD e HDD</h3>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Critério</th>
+                        <th>SSD</th>
+                        <th>HDD</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Velocidade</td>
+                        <td>Muito rápida (até 10x mais rápida que HDD)</td>
+                        <td>Mais lenta</td>
+                    </tr>
+                    <tr>
+                        <td>Durabilidade</td>
+                        <td>Mais resistente a quedas e impactos</td>
+                        <td>Menos resistente a quedas e impactos</td>
+                    </tr>
+                    <tr>
+                        <td>Preço</td>
+                        <td>Mais caro por GB</td>
+                        <td>Mais barato por GB</td>
+                    </tr>
+                    <tr>
+                        <td>Capacidade</td>
+                        <td>Geralmente menor (até 2TB comum)</td>
+                        <td>Geralmente maior (até 10TB comum)</td>
+                    </tr>
+                    <tr>
+                        <td>Consumo de energia</td>
+                        <td>Menor consumo de energia</td>
+                        <td>Maior consumo de energia</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
+        <h3>Modelos Recomendados</h3>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Modelo</th>
+                    <th>Capacidade</th>
+                    <th>Preço</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Samsung 970 EVO</td>
+                    <td>1 TB</td>
+                    <td>R$ 800,00</td>
+                </tr>
+                <tr>
+                    <td>Western Digital Blue</td>
+                    <td>2 TB</td>
+                    <td>R$ 400,00</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <section>
+                <div class="row">
+                <div class="col-md-6">
+                    <img src="https://tm.ibxk.com.br/2019/06/13/13092200705239.jpg" alt="SSD" class="img-fluid">
+                    <p class="text-center">SSD</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="https://microexato.com.br/wp-content/uploads/2019/10/modelo-de-hd-scaled.jpg" alt="HDD" class="img-fluid">
+                    <p class="text-center">HDD</p>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    <footer class="bg-dark text-white text-center p-3 mt-4">
+        <p>&copy; 2024 PcW</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

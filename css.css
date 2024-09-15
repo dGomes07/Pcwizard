@@ -1,0 +1,256 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo geral */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #000000;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #000000;
+    padding: 20px 0;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo h1 {
+    margin-left: 20px;
+    font-size: 2em;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin-right: 20px;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #000000;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 100%);
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.hero h2 {
+    font-size: 3em;
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Products Section */
+.products-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px 20px;
+    gap: 30px;
+    background-color: #000000;
+}
+
+.product {
+    background-color: rgb(33, 5, 39);
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 280px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.product:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.product h2 {
+    font-size: 1.5em;
+    color: #0073e6;
+    margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.product p {
+    font-size: 0.9em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.product .price {
+    font-size: 1.2em;
+    color: #28a745;
+    font-weight: bold;
+}
+
+.product button {
+    background-color: #ffdd57;
+    border: none;
+    padding: 10px 20px;
+    color: #333;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.product button:hover {
+    background-color: #ffcc00;
+}
+
+/* Footer */
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9em;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .hero h2 {
+        font-size: 2.5em;
+    }
+
+    .products-section {
+        padding: 20px 10px;
+        gap: 20px;
+    }
+
+    .product {
+        width: 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+
+/* Load More Button */
+.load-more-container {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.load-more-btn {
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.load-more-btn:hover {
+    background-color: #005bb5;
+}
+
+
+/* Estilo para o formulário de pesquisa */
+#searchForm {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+#searchForm input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 4px 0 0 4px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+#searchForm input[type="text"]:focus {
+    border-color: #007bff;
+}
+
+#searchForm button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#searchForm button:hover {
+    background-color: #0056b3;
+}
+
+/* Alterar a cor de fundo da barra de navegação */
+.navbar {
+    background-color: #000000 !important; /* Exemplo: cor cinza escuro */
+}
+
+/* Alterar a cor dos links na barra de navegação */
+.navbar .nav-link {
+    color: rgb(162, 91, 204) !important; /* Define a cor dos links */
+}
+
+/* Alterar a cor dos links ao passar o mouse */
+.navbar .nav-link:hover {
+    color: #e62cff !important; /* Exemplo: cor amarela ao passar o mouse */
+}
